@@ -1,17 +1,4 @@
-let contacts = [
-    {
-        addressed: "Davis",
-        firstName: "Jolene",
-        lastName: "Teagan",
-        email: "",
-        phone: "123-456-7890",
-        street: "Eden 57684 Zena",
-        postal: "",
-        city: "",
-        country: "India",
-        labels: "Friends"
-    }
-];
+let contacts = [];
 
 function renderContacts() {
     const tbody = document.getElementById('contactsBody');
