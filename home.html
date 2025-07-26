@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AddressBook</title>
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <div id="container">
+        <div class="header">
+            <span class="logo">👤</span>
+            <span class="title">Address<span class="bold">Book</span></span>
+        </div>
+        <button id="addBtn">+ Add address</button>
+        <table id="contactsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Address</th>
+                    <th>Labels</th>
+                    <th>By Name</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody id="contactsBody">
+            </tbody>
+        </table>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-btn">&times;</span>
+            <form id="addressForm">
+                <h2>Add Address</h2>
+                <label>How should your mail be addressed?</label>
+                <input type="text" name="addressed" placeholder="E.g. The Smith Family" required />
+                
+                <div class="row">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" name="firstName" required />
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" name="lastName" required />
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" />
+                    </div>
+                    <div>
+                        <label>Phone</label>
+                        <input type="text" name="phone" required />
+                    </div>
+                </div>
+                
+                <label>Street address</label>
+                <input type="text" name="street" required />
+                
+                <div class="row">
+                    <div>
+                        <label>Postal Code</label>
+                        <input type="text" name="postal" required />
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" required />
+                    </div>
+                    <div>
+                        <label>Country</label>
+                        <select name="country" required>
+                            <option selected>India</option>
+                            <option>USA</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <label>Labels</label>
+                <select name="labels">
+                    <option>Friends</option>
+                    <option>Family</option>
+                    <option>Work</option>
+                </select>
+                
+                <button type="submit" class="save-btn">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

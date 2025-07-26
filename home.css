@@ -1,0 +1,166 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #fff;
+    margin: 0;
+}
+
+#container {
+    width: 80vw;
+    margin: 40px auto;
+    padding: 10px 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.logo {
+    background: #ff9800;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+    margin-right: 10px;
+}
+.title {
+    color: #222;
+}
+.title .bold {
+    font-weight: bold;
+}
+
+#addBtn {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 22px;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: background 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+#addBtn:hover {
+    background-color: #ffa726;
+}
+
+#contactsTable {
+    width: 100%;
+    border-radius: 6px;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2.5px 16px 3px rgba(0,0,0,0.02);
+    margin-bottom: 1rem;
+}
+
+#contactsTable th, #contactsTable td {
+    padding: 16px 12px;
+    text-align: left;
+}
+
+#contactsTable th {
+    background-color: #fafafa;
+    color: #222;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+}
+#contactsTable tr { border-bottom: 1px solid #f1f1f1; }
+#contactsTable tr:last-child { border-bottom: none; }
+
+.label-chip {
+    display: inline-block;
+    background-color: #f1f1f8;
+    border-radius: 6px;
+    padding: 4px 15px;
+    color: #505080;
+    font-size: 0.93rem;
+    font-weight: 500;
+}
+
+#contactsTable .by-name {
+    color: #666;
+    font-size: 0.97em;
+}
+
+#contactsTable .address-main {
+    font-weight: bold;
+    color: #222;
+    display: block;
+    margin-bottom: 2px;
+}
+#contactsTable .address-secondary {
+    color: #999;
+    font-size: 0.94em;
+    margin-left: 2px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0; top: 0; right: 0; bottom: 0;
+    background: rgba(50,50,65,0.18);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .modal-content {
+    background: #fff;
+    border-radius: 14px;
+    padding: 34px 30px 24px 30px;
+    width: 390px;
+    box-shadow: 0 10px 60px 2px rgba(0,0,0,0.10);
+    position: relative;
+    margin: 60px auto;
+}
+.close-btn {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    font-size: 1.5rem;
+    color: #888;
+    cursor: pointer;
+    transition: color .2s;
+}
+.close-btn:hover { color: #c95b0b;}
+
+#addressForm label {
+    display: block;
+    font-size: 1em;
+    margin-top: 12px;
+    margin-bottom: 3px;
+    color: #222;
+    font-weight: 500;
+}
+#addressForm input, 
+#addressForm select {
+    width: 100%;
+    padding: 10px 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 6px;
+    background: #fcfcfc;
+}
+
+#addressForm .row {
+    display: flex;
+    gap: 12px;
+}
+#addressForm .row > div { flex:1; }
+
+.save-btn {
+    margin-top: 18px;
+    background: #ff9800;
+    color: white;
+    padding: 11px 23px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.18s;
+}
+.save-btn:hover { background: #fb7d00; }
